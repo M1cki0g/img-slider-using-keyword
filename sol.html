@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="interact.css" />
+  </head>
+  <body>
+    <script src="interact.js"></script>
+
+    <div id="main">
+      <p id="text">hover over an image.</p>
+    </div>
+
+    <div id="content">
+      <div id="img1">
+        <img
+          src="télécharger.jpeg"
+          alt="puppy1"
+          id="pic1"
+          onmouseover="display1(this)"
+          onmouseout="document.getElementById('text').innerHTML = 'hover over an image';
+        document.getElementById('main').style.backgroundImage='none';"
+        />
+      </div>
+
+      <div id="img2">
+        <img
+          src="télécharger (1).jpeg"
+          alt="puppy2"
+          id="pic2"
+          onmouseover="display2(this)"
+          onmouseout="document.getElementById('text').innerHTML = 'hover over an image';
+        document.getElementById('main').style.backgroundImage='none';"
+        />
+      </div>
+
+      <div id="img3">
+        <img
+          src="télécharger (2).jpeg"
+          alt="puppy3"
+          id="pic3"
+          onmouseover="display3(this)"
+          onmouseout="document.getElementById('text').innerHTML = 'hover over an image';
+      document.getElementById('main').style.backgroundImage='none';"
+        />
+      </div>
+    </div>
+  </body>
+</html>
